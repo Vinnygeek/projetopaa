@@ -52,7 +52,7 @@
     <string>Gerar Perfil</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_addReprovadas_gerarHistorico">
+  <widget class="QPushButton" name="pushButton_gerarHistorico">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -65,7 +65,7 @@
     <string>Gerar Histórico</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_addReprovadas_2">
+  <widget class="QPushButton" name="pushButton_gerarXml">
    <property name="geometry">
     <rect>
      <x>60</x>

@@ -1,5 +1,7 @@
 #include "telacoordenador.h"
 #include "ui_telacoordenador.h"
+#include <iostream>
+    using namespace std;
 
 TelaCoordenador::TelaCoordenador(QWidget *parent) :
     QDialog(parent),
@@ -11,4 +13,19 @@ TelaCoordenador::TelaCoordenador(QWidget *parent) :
 TelaCoordenador::~TelaCoordenador()
 {
     delete ui;
+}
+
+void TelaCoordenador::on_pushButton_gerarXml_clicked()
+{
+    cout<<"Coordenador->gerar Xml-> Entrada efetuada"<<endl;
+}
+
+void TelaCoordenador::on_pushButton_indiceDeReprovacoes_clicked()
+{
+    cout<<"Coordenador->indice de Reprovacoes-> Entrada efetuada"<<endl;
+}
+
+void TelaCoordenador::on_pushButton_situacaoDosDiscentes_clicked()
+{
+    cout<<"Coordenador->situacao dos Discentes-> Entrada efetuada"<<endl;
 }
