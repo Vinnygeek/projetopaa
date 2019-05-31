@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "telaaprovadas.h"
+#include "telareprovadas.h"
 
 namespace Ui {
 class TelaAluno;
@@ -30,6 +31,7 @@ private slots:
 private:
     Ui::TelaAluno *ui;
     TelaAprovadas *telaAprovadas;
+    TelaReprovadas *telaReprovadas;
 };
 
 #endif // TELAALUNO_H

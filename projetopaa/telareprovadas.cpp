@@ -1,5 +1,5 @@
-#include "telaaprovadas.h"
-#include "ui_telaaprovadas.h"
+#include "telareprovadas.h"
+#include "ui_telareprovadas.h"
 #include <QList>
 #include <QCheckBox>
 #include <QGroupBox>
@@ -7,21 +7,21 @@
 #include <QtDebug>
 #include <QtCore>
 
-
-TelaAprovadas::TelaAprovadas(QWidget *parent) :
+TelaReprovadas::TelaReprovadas(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::TelaAprovadas)
+    ui(new Ui::TelaReprovadas)
 {
     ui->setupUi(this);
 }
 
-TelaAprovadas::~TelaAprovadas()
+TelaReprovadas::~TelaReprovadas()
 {
     delete ui;
 }
 
-void TelaAprovadas::on_pushButton_OK_clicked()
+void TelaReprovadas::on_pushButton_OK_clicked()
 {
+
     QDomDocument document;
     QDomElement root = document.createElement("DISCIPLINAS");
     document.appendChild(root);
@@ -147,9 +147,9 @@ void TelaAprovadas::on_pushButton_OK_clicked()
         }
 
 // Criando um novo arquivo xml onde seram guardado os dados das disciplinas aprovadas pelos discentes(Grade do aluno)
-        QFile file("/home/vinicius/git_workspace/projetopaa/projetopaa/xml/aprovadas.xml");
+        QFile file("/home/vinicius/git_workspace/projetopaa/projetopaa/xml/reprovadas.xml");
         if(!file.open(QIODevice::WriteOnly | QIODevice::Text)){
-            qDebug()<< "Failed to open file /home/vinicius/git_workspace/projetopaa/projetopaa/xml/aprovadas.xml for writing";
+            qDebug()<< "Failed to open file /home/vinicius/git_workspace/projetopaa/projetopaa/xml/reprovadas.xml for writing";
         }
         else{
             QTextStream stream(&file);
@@ -163,15 +163,15 @@ void TelaAprovadas::on_pushButton_OK_clicked()
     hide();
     //statistics = new Statistics(this);
     //statistics->show();
-
 }
 
-void TelaAprovadas::on_pushButton_CANCELA_clicked()
+void TelaReprovadas::on_pushButton_CANCELA_clicked()
 {
        hide();
 }
 
-void TelaAprovadas::on_checkBox_TODAS1_stateChanged(int arg1)
+
+void TelaReprovadas::on_checkBox_TODAS1_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox->children());
             while (i.hasNext())
@@ -185,7 +185,7 @@ void TelaAprovadas::on_checkBox_TODAS1_stateChanged(int arg1)
             }
 }
 
-void TelaAprovadas::on_checkBox_TODAS2_stateChanged(int arg1)
+void TelaReprovadas::on_checkBox_TODAS2_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox_2->children());
             while (i.hasNext())
@@ -199,7 +199,7 @@ void TelaAprovadas::on_checkBox_TODAS2_stateChanged(int arg1)
             }
 }
 
-void TelaAprovadas::on_checkBox_TODAS3_stateChanged(int arg1)
+void TelaReprovadas::on_checkBox_TODAS3_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox_3->children());
             while (i.hasNext())
@@ -213,7 +213,7 @@ void TelaAprovadas::on_checkBox_TODAS3_stateChanged(int arg1)
             }
 }
 
-void TelaAprovadas::on_checkBox_TODAS4_stateChanged(int arg1)
+void TelaReprovadas::on_checkBox_TODAS4_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox_4->children());
             while (i.hasNext())
@@ -227,7 +227,7 @@ void TelaAprovadas::on_checkBox_TODAS4_stateChanged(int arg1)
             }
 }
 
-void TelaAprovadas::on_checkBox_TODAS5_stateChanged(int arg1)
+void TelaReprovadas::on_checkBox_TODAS5_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox_5->children());
             while (i.hasNext())
@@ -241,7 +241,7 @@ void TelaAprovadas::on_checkBox_TODAS5_stateChanged(int arg1)
             }
 }
 
-void TelaAprovadas::on_checkBox_TODAS6_stateChanged(int arg1)
+void TelaReprovadas::on_checkBox_TODAS6_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox_6->children());
             while (i.hasNext())
@@ -255,7 +255,7 @@ void TelaAprovadas::on_checkBox_TODAS6_stateChanged(int arg1)
             }
 }
 
-void TelaAprovadas::on_checkBox_TODAS7_stateChanged(int arg1)
+void TelaReprovadas::on_checkBox_TODAS7_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox_7->children());
             while (i.hasNext())
@@ -269,7 +269,7 @@ void TelaAprovadas::on_checkBox_TODAS7_stateChanged(int arg1)
             }
 }
 
-void TelaAprovadas::on_checkBox_TODAS8_stateChanged(int arg1)
+void TelaReprovadas::on_checkBox_TODAS8_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox_8->children());
             while (i.hasNext())
@@ -283,7 +283,7 @@ void TelaAprovadas::on_checkBox_TODAS8_stateChanged(int arg1)
             }
 }
 
-void TelaAprovadas::on_checkBox_TODAS9_stateChanged(int arg1)
+void TelaReprovadas::on_checkBox_TODAS9_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox_9->children());
             while (i.hasNext())
@@ -297,7 +297,7 @@ void TelaAprovadas::on_checkBox_TODAS9_stateChanged(int arg1)
             }
 }
 
-void TelaAprovadas::on_checkBox_TODAS10_stateChanged(int arg1)
+void TelaReprovadas::on_checkBox_TODAS10_stateChanged(int arg1)
 {
     QListIterator<QObject *> i(ui->groupBox_10->children());
             while (i.hasNext())

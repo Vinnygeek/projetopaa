@@ -25,6 +25,8 @@ void TelaAluno::on_pushButton_addAprovadas_clicked()
 void TelaAluno::on_pushButton_addReprovadas_clicked()
 {
     cout<<"Aluno->addReprovadas-> Entrada efetuada"<<endl;
+    telaReprovadas = new TelaReprovadas(this);
+    telaReprovadas->show();
 }
 
 void TelaAluno::on_pushButton_gerarXml_clicked()

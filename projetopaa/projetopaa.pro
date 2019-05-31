@@ -28,16 +28,19 @@ SOURCES += \
         telainicial.cpp \
     telaaluno.cpp \
     telacoordenador.cpp \
-    telaaprovadas.cpp
+    telaaprovadas.cpp \
+    telareprovadas.cpp
 
 HEADERS += \
         telainicial.h \
     telaaluno.h \
     telacoordenador.h \
-    telaaprovadas.h
+    telaaprovadas.h \
+    telareprovadas.h
 
 FORMS += \
         telainicial.ui \
     telaaluno.ui \
     telacoordenador.ui \
-    telaaprovadas.ui
+    telaaprovadas.ui \
+    telareprovadas.ui
