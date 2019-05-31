@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "telaaprovadas.h"
 #include "telareprovadas.h"
+#include "disciplina.h"
 
 namespace Ui {
 class TelaAluno;
