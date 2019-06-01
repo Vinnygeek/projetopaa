@@ -18,6 +18,11 @@ TelaCoordenador::~TelaCoordenador()
 void TelaCoordenador::on_pushButton_gerarXml_clicked()
 {
     cout<<"Coordenador->gerar Xml-> Entrada efetuada"<<endl;
+    Grade gradeCoord;
+    cout<<"Aluno->gerarXml-> Entrada efetuada"<<endl;
+        gradeCoord.CarregarGradeDiscente();
+        gradeCoord.atualizaPrerequisitos();
+        gradeCoord.gerarXmlCoordenador();
 }
 
 void TelaCoordenador::on_pushButton_indiceDeReprovacoes_clicked()

@@ -1,5 +1,6 @@
 #include "telaaluno.h"
 #include "ui_telaaluno.h"
+#include "grade.h"
 #include <iostream>
     using namespace std;
 
@@ -31,7 +32,14 @@ void TelaAluno::on_pushButton_addReprovadas_clicked()
 
 void TelaAluno::on_pushButton_gerarXml_clicked()
 {
+
+    Grade gradeAluno;
     cout<<"Aluno->gerarXml-> Entrada efetuada"<<endl;
+        gradeAluno.CarregarGradeDiscente();
+        gradeAluno.atualizaAprovadas();
+        gradeAluno.atualizaReprovadas();
+        gradeAluno.atualizaPrerequisitos();
+        gradeAluno.gerarXmlDiscente();
 }
 
 void TelaAluno::on_pushButton_gerarHistorico_clicked()

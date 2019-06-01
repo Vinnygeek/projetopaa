@@ -2,6 +2,7 @@
 #define TELACOORDENADOR_H
 
 #include <QDialog>
+#include "grade.h"
 
 namespace Ui {
 class TelaCoordenador;

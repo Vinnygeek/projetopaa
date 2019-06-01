@@ -16,16 +16,21 @@ class Grade
     QDomDocument QDDDependencias;//Armazenará o arquivo dependencias.xml
     QDomDocument QDDAprovadas;//Armazenará o arquivo com as disciplinas aprovadas
     QDomDocument QDDReprovadas;//Armazenará o arquivo com as disciplinas aprovadas
-    QFile *disciplinaXML;
-    QFile *prerequisitosXML;
-    QFile *aprovadasXML;
-    QFile *reprovadasXML;
+
+    //QFile disciplinaXML("/home/vinicius/git_workspace/projetopaa/projetopaa/xml/disciplinas.xml");
+    //QFile prerequisitosXML("/home/vinicius/git_workspace/projetopaa/projetopaa/xml/dependencias.xml");
+    //QFile aprovadasXML("/home/vinicius/git_workspace/projetopaa/projetopaa/xml/aprovadas.xml");
+    //QFile reprovadasXML("/home/vinicius/git_workspace/projetopaa/projetopaa/xml/reprovadas.xml");
 
 public:
     Grade();
+    void CarregarGradeDiscente();
     void atualizaPrerequisitos();
     void atualizaAprovadas();
     void atualizaReprovadas();
+    void gerarXmlDiscente();
+    void gerarXmlCoordenador();
+
 
 };
 
