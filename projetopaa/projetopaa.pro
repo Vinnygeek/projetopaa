@@ -30,7 +30,8 @@ SOURCES += \
     telacoordenador.cpp \
     telaaprovadas.cpp \
     telareprovadas.cpp \
-    disciplina.cpp
+    disciplina.cpp \
+    grade.cpp
 
 HEADERS += \
         telainicial.h \
@@ -38,7 +39,8 @@ HEADERS += \
     telacoordenador.h \
     telaaprovadas.h \
     telareprovadas.h \
-    disciplina.h
+    disciplina.h \
+    grade.h
 
 FORMS += \
         telainicial.ui \
