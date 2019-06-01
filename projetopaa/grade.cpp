@@ -64,6 +64,8 @@ void Grade::CarregarGradeDiscente(){
 }
 
 void Grade::atualizaPrerequisitos(){
+    cout<<"Entrando em atualizar Prerequisitos-----------------------------------------------"<<endl;
+
     QFile prerequisitosXML("/home/vinicius/git_workspace/projetopaa/projetopaa/xml/dependencias.xml");
     if(!prerequisitosXML.open(QIODevice::ReadOnly | QIODevice::Text)){
         qDebug()<<"Failed to open file /home/vinicius/Desktop/testeinterface/xmlFiles/dependencias.xml";
@@ -72,22 +74,26 @@ void Grade::atualizaPrerequisitos(){
             qDebug()<<"Failed to load document of file /home/vinicius/Desktop/testeinterface/xmlFiles/dependencias.xml";
         }
 
+    cout<<"Apos abrir o arquivo-----------------------------------------------------------------"<<endl;
      QDomElement root = QDDDependencias.firstChildElement();
      QDomNodeList items = root.elementsByTagName("DISCIPLINA");//Processndo a variável root.
     for(int i = 0; i < items.count();i++){//Laço para percorrer todos os itens passados por root(esses itens ).
         QDomNode itemnode = items.at(i);//Recupera o i-ésimo item presente no arquivo XML passado por root.
         if(itemnode.isElement()){//Verifica se a i-ésima disciplina de fato é um ítem processável.
             QDomElement itemele = itemnode.toElement(); //Converte a i-ésima disciplina para o formato aceito pela implementação.
-            string Codigo = itemele.attribute("COIDGO").toStdString(); //Recupera informação do código da i-ésima disciplina que que possui dependência.
+            string Codigo = itemele.attribute("CODIGO").toStdString(); //Recupera informação do código da i-ésima disciplina que que possui dependência.
             string Dep1 = itemele.attribute("DEP1").toStdString(); //Recupera a informação da primeira dependência da i-ésima disciplina do arquivo XML.
             string Dep2 = itemele.attribute("DEP2").toStdString(); //Recupera a informação da segunda dependência da i-ésima disciplina do arquivo XML.
             string Dep3 = itemele.attribute("DEP3").toStdString(); //Recupera a informação da terceira dependência da i-ésima disciplina do arquivo XML.
             string Dep4 = itemele.attribute("DEP4").toStdString(); //Recupera a informação da quarta dependência da i-ésima disciplina do arquivo XML.
             bool chave = true; //Encerra o loop abaixo quando o pre-requisito for adicionado
+
             for(unsigned long j = 0; j < 76 && chave; j++){ //Ao todo são 75 disciplinas do curso de Engenharia de Computação
                 if(grade[j].getCodigo() == Codigo){
-                    if(Dep1 != "NIL")
+                    if(Dep1 != "NIL"){
                         grade[j].addDependencias(Dep1);
+                        cout<<"Adicionando dependencia"<<Dep1<<endl;
+                    }
 
                     if(Dep2 != "NIL")
                         grade[j].addDependencias(Dep2);
@@ -238,4 +244,8 @@ void Grade::gerarXmlCoordenador(){
             qDebug() << "Finished";
         }
     file.close();
+}
+
+vector<Disciplina> Grade::getGrade(){
+    return grade;
 }

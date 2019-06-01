@@ -24,6 +24,7 @@ class Grade
 
 public:
     Grade();
+    vector<Disciplina> getGrade();
     void CarregarGradeDiscente();
     void atualizaPrerequisitos();
     void atualizaAprovadas();
