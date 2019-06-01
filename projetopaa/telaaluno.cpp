@@ -5,6 +5,7 @@
 #include "grafo.h"
 #include<sstream>
 #include "vertice.h"
+#include "aresta.h"
     using namespace std;
 
 Grade gradeAluno;
@@ -57,12 +58,19 @@ void TelaAluno::on_pushButton_gerarHistorico_clicked()
         vector<string> prerequesitinho = gradinha[i].getDependencias();
         for(int j = 0; j < prerequesitinho.size();++j){
                 stringstream sss;
-                string s;
-                sss <<gradinha[i].getCodigo() <<" -> "<<prerequesitinho[j]<<'\n';
-                s = sss.str();
 
-                cout<<"Adicionando aresta"<<s<<endl;
-                grafoAluno.addAresta(s);
+                Aresta novaAresta;
+                sss <<gradinha[i].getCodigo() <<" -> "<<prerequesitinho[j]<<'\n';
+                novaAresta.setInfo(sss.str());
+                for(int k = 0; k < 76;k++){
+                    if(gradinha[k].getCodigo() == prerequesitinho[j])
+                        if(gradinha[k].getSituacao() == "APR")
+                            novaAresta.setCor("Green");
+                        else
+                            novaAresta.setCor("Black");
+                }
+                grafoAluno.addAresta(novaAresta);
+                //grafoAluno.addAresta(novaAresta);
         }
 
         Vertice novoVertice;

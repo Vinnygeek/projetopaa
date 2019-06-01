@@ -33,7 +33,8 @@ SOURCES += \
     disciplina.cpp \
     grade.cpp \
     grafo.cpp \
-    vertice.cpp
+    vertice.cpp \
+    aresta.cpp
 
 HEADERS += \
         telainicial.h \
@@ -44,7 +45,8 @@ HEADERS += \
     disciplina.h \
     grade.h \
     grafo.h \
-    vertice.h
+    vertice.h \
+    aresta.h
 
 FORMS += \
         telainicial.ui \

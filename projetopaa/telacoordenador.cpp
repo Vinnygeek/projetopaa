@@ -43,11 +43,10 @@ void TelaCoordenador::on_pushButton_indiceDeReprovacoes_clicked()
         vector<string> prerequesitinho = gradinha[i].getDependencias();
         for(int j = 0; j < prerequesitinho.size();++j){
                 stringstream sss;
-                string s;
+                Aresta s;
                 sss <<gradinha[i].getCodigo() <<" -> "<<prerequesitinho[j]<<'\n';
-                s = sss.str();
+                s.setInfo(sss.str());
 
-                cout<<"Adicionando aresta"<<s<<endl;
                 grafoCoord.addAresta(s);
         }
 
@@ -55,29 +54,28 @@ void TelaCoordenador::on_pushButton_indiceDeReprovacoes_clicked()
         novoVertice.setCodigo(gradinha[i].getCodigo());
 
         double repindice = gradinha[i].getRepIndex();
-
         if(repindice < 15){
-            novoVertice.setColor("#00ffff");
+            novoVertice.setColor("#53c4c9");
             novoVertice.setFontcolor("Black");
         }
 
         else if(repindice < 30 && repindice >= 15){
-            novoVertice.setColor("#f0e68c");
+            novoVertice.setColor("#c7dece");
             novoVertice.setFontcolor("black");
         }
 
         else if(repindice < 45 && repindice >= 30){
-            novoVertice.setColor("#0000ff");
+            novoVertice.setColor("#ffffff");
             novoVertice.setFontcolor("black");
         }
 
         else if(repindice < 60 && repindice >= 45){
-            novoVertice.setColor("#f0e68c");
+            novoVertice.setColor("#f0db0b");
             novoVertice.setFontcolor("black");
         }
 
         else if(repindice < 75 && repindice >= 60){
-            novoVertice.setColor("#ff4500");
+            novoVertice.setColor("#f0670b");
             novoVertice.setFontcolor("black");
         }
 
@@ -87,7 +85,7 @@ void TelaCoordenador::on_pushButton_indiceDeReprovacoes_clicked()
         }
 
         else{ //Maiores do que 90
-            novoVertice.setColor("#800000");
+            novoVertice.setColor("#000000");
             novoVertice.setFontcolor("lightgrey");
         }
 
