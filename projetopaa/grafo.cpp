@@ -106,11 +106,6 @@ string Grafo::getFim(){
 
 }
 
-void openPNG(){
-
-
-}
-
 string Grafo::legendaDiscente(){
     stringstream ss;
     ss <<"node [style=filled shape=circle fontsize=22.0 fontname=\"times bold\"]"<<'\n'

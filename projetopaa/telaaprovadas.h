@@ -7,6 +7,11 @@ namespace Ui {
 class TelaAprovadas;
 }
 
+/**
+ * @brief Esta classe define os métodos para a criação da tela onde o aluno apontará as disciplinas aprovadas.
+ * @param ui Ponteiro para a tela atual onde é exibido a tela com todas as disciplinas do curso para o aluno selecionar os componentes
+ * em que foi aprovado.
+ */
 class TelaAprovadas : public QDialog
 {
     Q_OBJECT

@@ -9,6 +9,13 @@ namespace Ui {
 class TelaInicial;
 }
 
+/**
+ * @brief Esta classe define os métodos para a criação da tela inicial do programa, onde o usuário poderá entrar com a opção Aluno
+ * ou Coordenador.
+ * @param ui Ponteiro para a tela atual onde é exibido a tela com as duas opções de seleção: Aluno e Coordenador
+ * @param telaAluno Ponteiro para a tela do Aluno onde serão exibidas todas as opções para o discente.
+ * @param telaCoordenador Ponteiro para a tela do Coordenador onde serão exibidas todas as opções para o mesmo.
+ */
 class TelaInicial : public QMainWindow
 {
     Q_OBJECT

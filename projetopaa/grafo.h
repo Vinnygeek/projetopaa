@@ -6,6 +6,14 @@
 #include "vertice.h"
 #include "aresta.h"
 using namespace std;
+
+/**
+ * @brief Esta classe servirá como estrutura de dados e Engine(máquina)para representar e gerar o grafo pelo programa Araphviz.
+ * @param arestas Este atributo armazenará todas as arestas(Prerequisitos) do grafo.
+ * @param vertices Este atributo armazenará todos os vértices(Disciplinas) do grafo.
+ * @param comeco Este atributo armaze a string de inicializacao do arquivo .dot de onde será chamado a função para gerar o grafo.
+ * @param fim Este atributo armaze a string de finalizacao do arquivo .dot de onde será chamado a função para gerar o grafo.
+ */
 class Grafo
 {
     vector<Aresta> arestas;
@@ -16,16 +24,50 @@ class Grafo
     void setFim();
 
 public:
+    /**
+      @brief Construtor sem parâmetros.
+    **/
     Grafo();
+
+    /**
+      @brief Adiciona nova aresta(Pre-requisito) ao grafo.
+    **/
     void addAresta(Aresta novaAresta);
+
+    /**
+      @brief Adiciona novo vértice(Disciplina) ao grafo.
+    **/
     void addVertice(Vertice novoVertice);
+
+    /**
+      @brief Gera o arquivo grafoCoord.dot, contrói a imagem pelo programa Graphviz e exibe o grafo.
+    **/
     void gerarGraphvizCoord();
+
+    /**
+      @brief Gera o arquivo grafoDiscente.dot, contrói a imagem pelo programa Graphviz e exibe o grafo.
+    **/
     void gerarGraphvizDiscente();
+
+    /**
+      @brief Gera uma string para exibir a legenda para o grafo do discente.
+    **/
     string legendaDiscente();
+
+    /**
+      @brief Gera uma string para exibir a legenda para o grafo do coordenador.
+    **/
     string legendaCoord();
+
+    /**
+      @brief Retorna a string de começo do arquivo .dot para criação do grafo.
+    **/
     string getComeco();
+
+    /**
+      @brief Retorna a string de fim do arquivo .dot para criação do grafo.
+    **/
     string getFim();
-    void openPNG();
 };
 
 #endif // GRAFO_H
