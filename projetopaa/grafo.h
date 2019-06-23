@@ -59,6 +59,8 @@ public:
      */
     void gerarGraphvizPerfilDiscente();
 
+    void gerarGraphvizPerfilCoordenador();
+
     /**
       @brief Gera uma string para exibir a legenda para o grafo do discente.
     **/

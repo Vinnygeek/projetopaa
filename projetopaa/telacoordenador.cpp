@@ -2,9 +2,11 @@
 #include "ui_telacoordenador.h"
 #include <iostream>
 #include "grafo.h"
+#include "grafo3.h"
 #include<sstream>
 #include "vertice.h"
 #include "grade.h"
+#include "gradeperfil.h"
 
 Grade gradeCoord;
 Grafo grafoCoord;
@@ -55,32 +57,32 @@ void TelaCoordenador::on_pushButton_indiceDeReprovacoes_clicked()
 
         double repindice = gradinha[i].getRepIndex();
         if(repindice < 15){
-            novoVertice.setColor("#53c4c9");
+            novoVertice.setColor("#fff5eb");
             novoVertice.setFontcolor("Black");
         }
 
         else if(repindice < 30 && repindice >= 15){
-            novoVertice.setColor("#c7dece");
+            novoVertice.setColor("#fee6ce");
             novoVertice.setFontcolor("black");
         }
 
         else if(repindice < 45 && repindice >= 30){
-            novoVertice.setColor("#ffffff");
+            novoVertice.setColor("#fdae6b");
             novoVertice.setFontcolor("black");
         }
 
         else if(repindice < 60 && repindice >= 45){
-            novoVertice.setColor("#f0db0b");
+            novoVertice.setColor("#fd8d3c");
             novoVertice.setFontcolor("black");
         }
 
         else if(repindice < 75 && repindice >= 60){
-            novoVertice.setColor("#f0670b");
+            novoVertice.setColor("#d94801");
             novoVertice.setFontcolor("black");
         }
 
         else if(repindice < 90 && repindice >= 75){
-            novoVertice.setColor("#ff0000");
+            novoVertice.setColor("#7f2704");
             novoVertice.setFontcolor("lightgrey");
         }
 
@@ -186,5 +188,23 @@ void TelaCoordenador::on_pushButton_indiceDeReprovacoes_clicked()
 
 void TelaCoordenador::on_pushButton_situacaoDosDiscentes_clicked()
 {
+    GradePerfil gradinhaperfil;
+    gradinhaperfil.CarregarGradePerfil();
+
     cout<<"Coordenador->situacao dos Discentes-> Entrada efetuada"<<endl;
+    Grafo GrafoParaPerfil; //Grafo para gerar o perfil no graphviz.
+    Grafo3 meuGrafo2(76); //Grafo para fazer a busca em profundidade. Não é necessário possuir arestas.
+    for(int i = 0; i < 76; ++i){ //Inicializando o Grafo para a busca
+        meuGrafo2.addEdge(0,i);
+    }
+
+    /**               Adicionando os vértices coloridos de acordo com a aprovação do aluno   */
+    cout<<"Aluno->gerarPerfil-> Entrada efetuada"<<endl;
+    vector<DisciplinaPerfil> gradinha = gradinhaperfil.getGrade();
+    cout<<"Antes da Gradinha";
+
+    meuGrafo2.DFS(GrafoParaPerfil, gradinha); //Adicionando as arestas que vão ligar na legenda, utilizar a atd de numeros ou não.
+
+    GrafoParaPerfil.gerarGraphvizPerfilCoordenador();
+    cout<<"Aluno->GerarPerfil-> Entrada efetuada"<<endl;
 }

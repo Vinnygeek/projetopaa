@@ -22,6 +22,7 @@ void GradePerfil::CarregarGradePerfil(){
             QString attribute1 = QString::fromStdString("CODIGO");
             QString attribute2 = QString::fromStdString("APROVACOES");
             QString attribute3 = QString::fromStdString("REPROVACOES");
+            QString attribute4 = QString::fromStdString("POSICAO");
             QDomNodeList items = root.elementsByTagName(tagname);//Processndo a variável root.
             for(int i = 0; i < items.count();i++){//Laço para percorrer todos os itens passados por root(esses itens ).
                 QDomNode itemnode = items.at(i);//Recupera o i-ésimo item presente no arquivo XML passado por root.
@@ -30,11 +31,13 @@ void GradePerfil::CarregarGradePerfil(){
                     string Codigo = itemele.attribute(attribute1).toStdString(); //Recupera a informação do código da i-ésima disciplina do arquivo XML(ECOI022,FISI01, etc).
                     int Aprovadas = itemele.attribute(attribute2).toInt();  //Recupera a informação da qtd de vezes em que a disciplina foi aprovada.
                     int Reprovadas = itemele.attribute(attribute3).toInt(); //Recupera a informação da qtd de vezes em que a disciplina foi reprovada.
-                    DisciplinaPerfil thisDisciplina(Codigo,Aprovadas,Reprovadas); //Utiliza o método construtor para criar a i-ésima disciplina com os parametros recém definidos.
+                    string Posicao = itemele.attribute(attribute4).toStdString(); //Recupera a informacao da posicao da disciplina no grafo
+                    DisciplinaPerfil thisDisciplina(Codigo,Aprovadas,Reprovadas,Posicao); //Utiliza o método construtor para criar a i-ésima disciplina com os parametros recém definidos.
                     grade.push_back(thisDisciplina); //Adiciona a disciplina na grade.
                     qDebug()<<itemele.attribute(attribute1); //Imprime o código da disciplina adicionada na grade.
                     qDebug()<<itemele.attribute(attribute2); //Imprime a qtd de aprovacoes.
                     qDebug()<<itemele.attribute(attribute3); //Imprime a qtd de reprovacoes
+                    qDebug()<<itemele.attribute(attribute4); //Imprime a qtd de reprovacoes
                 }
             }
 
@@ -119,9 +122,11 @@ void GradePerfil::gerarXmlPerfil(){
         QString codigo = QString::fromStdString(grade[j].getCodigo());
         int aprovadas = grade[j].getNumAprovadas();
         int reprovadas = grade[j].getNumReprovadas();
+        QString posicao = QString::fromStdString(grade[j].getPosicao());
         node.setAttribute("CODIGO",codigo);
         node.setAttribute("APROVACOES",aprovadas);
         node.setAttribute("REPROVACOES",reprovadas);
+        node.setAttribute("POSICAO",posicao);
      root.appendChild(node);
     }
 
@@ -138,3 +143,5 @@ void GradePerfil::gerarXmlPerfil(){
                 }
             file.close();
 }
+
+vector<DisciplinaPerfil> GradePerfil::getGrade(){return grade;}

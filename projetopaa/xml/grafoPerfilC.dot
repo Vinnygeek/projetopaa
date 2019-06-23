@@ -1,0 +1,226 @@
+digraph {
+graph [pad="2,4" bgcolor=lightgray]
+node [style=filled shape=cds fontsize=20.0 fontname="times bold"]
+PER_1 [fillcolor="#d3d3d3" fontcolor="black" pos="0,18!"]
+PER_2 [fillcolor="#d3d3d3" fontcolor="black" pos="2,18!"]
+PER_3 [fillcolor="#d3d3d3" fontcolor="black" pos="4,18!"]
+PER_4 [fillcolor="#d3d3d3" fontcolor="black" pos="6,18!"]
+PER_5 [fillcolor="#d3d3d3" fontcolor="black" pos="8,18!"]
+PER_6 [fillcolor="#d3d3d3" fontcolor="black" pos="10,18!"]
+PER_7 [fillcolor="#d3d3d3" fontcolor="black" pos="12,18!"]
+PER_8 [fillcolor="#d3d3d3" fontcolor="black" pos="14,18!"]
+PER_9 [fillcolor="#d3d3d3" fontcolor="black" pos="16,18!"]
+PER_10 [fillcolor="#d3d3d3" fontcolor="black" pos="18,18!"]
+node [style=filled shape=folder fontsize=20.0 fontname="times bold"]
+FISI01 [fillcolor="#50c878 "fontcolor="Black"pos="0,0!"]
+MATI01 [fillcolor="#50c878 "fontcolor="Black"pos="0,2!"]
+MATI02 [fillcolor="#50c878 "fontcolor="Black"pos="0,4!"]
+HUMI01 [fillcolor="#50c878 "fontcolor="Black"pos="0,6!"]
+HUMI02 [fillcolor="#50c878 "fontcolor="Black"pos="0,8!"]
+ECOI03 [fillcolor="#50c878 "fontcolor="Black"pos="0,10!"]
+ECOI02 [fillcolor="#50c878 "fontcolor="Black"pos="0,12!"]
+EMEI02 [fillcolor="#50c878 "fontcolor="Black"pos="0,14!"]
+ECOI01 [fillcolor="#50c878 "fontcolor="Black"pos="0,16!"]
+FISI02 [fillcolor="#50c878 "fontcolor="Black"pos="2,0!"]
+FISI03 [fillcolor="#50c878 "fontcolor="Black"pos="2,2!"]
+EMEI06 [fillcolor="#50c878 "fontcolor="Black"pos="2,4!"]
+MATI03 [fillcolor="#50c878 "fontcolor="Black"pos="2,6!"]
+ECOI04 [fillcolor="#50c878 "fontcolor="Black"pos="2,8!"]
+EMTI02 [fillcolor="#50c878 "fontcolor="Black"pos="2,10!"]
+EMTI03 [fillcolor="#50c878 "fontcolor="Black"pos="2,12!"]
+EELI02 [fillcolor="#50c878 "fontcolor="Black"pos="2,14!"]
+EELI03 [fillcolor="#50c878 "fontcolor="Black"pos="2,16!"]
+MATI06 [fillcolor="#ffff "fontcolor="Black"pos="4,0!"]
+MATI07 [fillcolor="#ffff "fontcolor="Black"pos="4,2!"]
+ECOI61 [fillcolor="#ffff "fontcolor="Black"pos="4,4!"]
+HUMI06 [fillcolor="#ffff "fontcolor="Black"pos="4,6!"]
+ECOI08 [fillcolor="#ffff "fontcolor="Black"pos="4,8!"]
+EMEI07 [fillcolor="#ffff "fontcolor="Black"pos="4,10!"]
+EMEI08 [fillcolor="#ffff "fontcolor="Black"pos="4,12!"]
+FISI04 [fillcolor="#ffff "fontcolor="Black"pos="4,14!"]
+EMBI02 [fillcolor="#ffff "fontcolor="Black"pos="4,16!"]
+MATI05 [fillcolor="#ffff "fontcolor="Black"pos="6,0!"]
+MATI08 [fillcolor="#ffff "fontcolor="Black"pos="6,2!"]
+MATI04 [fillcolor="#ffff "fontcolor="Black"pos="6,4!"]
+ECOI09 [fillcolor="#ffff "fontcolor="Black"pos="6,6!"]
+FISI05 [fillcolor="#ffff "fontcolor="Black"pos="6,8!"]
+FISI07 [fillcolor="#ffff "fontcolor="Black"pos="6,10!"]
+EELI07 [fillcolor="#ffff "fontcolor="Black"pos="6,12!"]
+ECOI11 [fillcolor="#ffff "fontcolor="Black"pos="8,0!"]
+ECOI12 [fillcolor="#ffff "fontcolor="Black"pos="8,2!"]
+ECOI14 [fillcolor="#ffff "fontcolor="Black"pos="8,4!"]
+ECAI26 [fillcolor="#ffff "fontcolor="Black"pos="8,6!"]
+ECOI10 [fillcolor="#ffff "fontcolor="Black"pos="8,8!"]
+EELI10 [fillcolor="#ffff "fontcolor="Black"pos="8,10!"]
+EELI11 [fillcolor="#ffff "fontcolor="Black"pos="8,12!"]
+FISI06 [fillcolor="#ffff "fontcolor="Black"pos="8,14!"]
+ECOI32 [fillcolor="#ffff "fontcolor="Black"pos="10,0!"]
+ECOI13 [fillcolor="#ffff "fontcolor="Black"pos="10,2!"]
+EELI14 [fillcolor="#ffff "fontcolor="Black"pos="10,4!"]
+EELI15 [fillcolor="#ffff "fontcolor="Black"pos="10,6!"]
+ECOI15 [fillcolor="#ffff "fontcolor="Black"pos="10,8!"]
+ECAI29 [fillcolor="#ffff "fontcolor="Black"pos="10,10!"]
+EELI12 [fillcolor="#ffff "fontcolor="Black"pos="10,12!"]
+ECOI16 [fillcolor="#ffff "fontcolor="Black"pos="10,14!"]
+EELI13 [fillcolor="#ffff "fontcolor="Black"pos="10,16!"]
+ECOI26 [fillcolor="#ffff "fontcolor="Black"pos="12,0!"]
+ECAI11 [fillcolor="#ffff "fontcolor="Black"pos="12,2!"]
+ECAI04 [fillcolor="#ffff "fontcolor="Black"pos="12,4!"]
+ECAI13 [fillcolor="#ffff "fontcolor="Black"pos="12,6!"]
+ECAI44 [fillcolor="#ffff "fontcolor="Black"pos="12,8!"]
+ECOI18 [fillcolor="#ffff "fontcolor="Black"pos="12,10!"]
+ECOI19 [fillcolor="#ffff "fontcolor="Black"pos="12,12!"]
+ECOI17 [fillcolor="#ffff "fontcolor="Black"pos="12,14!"]
+ECOI24 [fillcolor="#ffff "fontcolor="Black"pos="14,0!"]
+EPRI30 [fillcolor="#ffff "fontcolor="Black"pos="14,2!"]
+ECOI07 [fillcolor="#ffff "fontcolor="Black"pos="14,4!"]
+ECAI07 [fillcolor="#ffff "fontcolor="Black"pos="14,6!"]
+ECAI05 [fillcolor="#ffff "fontcolor="Black"pos="14,8!"]
+ECOI21 [fillcolor="#ffff "fontcolor="Black"pos="14,10!"]
+HUMI04 [fillcolor="#50c878 "fontcolor="Black"pos="16,0!"]
+EPRI04 [fillcolor="#50c878 "fontcolor="Black"pos="16,2!"]
+ECOI22 [fillcolor="#50c878 "fontcolor="Black"pos="16,4!"]
+ECOI23 [fillcolor="#50c878 "fontcolor="Black"pos="16,6!"]
+ECOI20 [fillcolor="#50c878 "fontcolor="Black"pos="16,8!"]
+ECOI25 [fillcolor="#50c878 "fontcolor="Black"pos="16,10!"]
+EAMI30 [fillcolor="#50c878 "fontcolor="Black"pos="16,12!"]
+EPRI02 [fillcolor="#50c878 "fontcolor="Black"pos="16,14!"]
+TCC01 [fillcolor="#50c878 "fontcolor="Black"pos="16,16!"]
+ESTA01 [fillcolor="#50c878 "fontcolor="Black"pos="18,0!"]
+TCC02 [fillcolor="#50c878 "fontcolor="Black"pos="18,2!"]
+node [style=filled shape=circle fontsize=20.0 fontname="times bold"]
+COM01 [fillcolor="#ff0000" fontcolor="Black" pos="22,0!"]
+COM02 [fillcolor="#0000ff" fontcolor="Black" pos="22,2!"]
+COM03 [fillcolor="#ffff00" fontcolor="Black" pos="22,4!"]
+COM04 [fillcolor="#ffc0cb" fontcolor="Black" pos="22,6!"]
+COM05 [fillcolor="#b8860b" fontcolor="Black" pos="22,8!"]
+COM06 [fillcolor="#ff6347" fontcolor="White" pos="22,10!"]
+COM07 [fillcolor="#ff00ff" fontcolor="White" pos="22,12!"]
+COM08 [fillcolor="#4b0082" fontcolor="White" pos="22,14!"]
+COM09 [fillcolor="#ffa07a" fontcolor="White" pos="22,16!"]
+COM10 [fillcolor="#ffa500" fontcolor="White" pos="24,0!"]
+COM11 [fillcolor="#ffd700" fontcolor="Black" pos="24,2!"]
+COM12 [fillcolor="#7b68ee" fontcolor="Black" pos="24,4!"]
+COM13 [fillcolor="#daa520" fontcolor="Black" pos="24,6!"]
+COM14 [fillcolor="#008080" fontcolor="Black" pos="24,8!"]
+COM15 [fillcolor="#da70d6" fontcolor="Black" pos="24,10!"]
+COM16 [fillcolor="#dda0dd" fontcolor="White" pos="24,12!"]
+COM17 [fillcolor="#1e90ff" fontcolor="White" pos="24,14!"]
+COM18 [fillcolor="#f0e686" fontcolor="White" pos="24,16!"]
+node [style=filled shape=box fontsize=20.0 fontname="times bold"]
+LEGENDA [fillcolor="#d3d3d3" fontcolor="black" pos="22,18!"]
+ edge [style="", weight=10,color=orange, len=.2]
+FISI01 -> COM03
+ edge [style="", weight=10,color=Red, len=.2]
+MATI01 -> COM01
+ edge [style="", weight=10,color=Red, len=.2]
+MATI02 -> COM01
+ edge [style="", weight=10,color=Blue, len=.2]
+ECOI03 -> COM02
+ edge [style="", weight=10,color=pink, len=.2]
+ECOI02 -> COM05
+ edge [style="", weight=10,color=orange, len=.2]
+FISI02 -> COM03
+ edge [style="", weight=10,color=orange, len=.2]
+FISI03 -> COM03
+ edge [style="", weight=10,color=Red, len=.2]
+EMEI06 -> COM01
+ edge [style="", weight=10,color=darkgoldenrod, len=.2]
+ECOI04 -> COM06
+ edge [style="", weight=10,color=orange, len=.2]
+EMTI02 -> COM03
+ edge [style="", weight=10,color=orange, len=.2]
+EMTI03 -> COM03
+ edge [style="", weight=10,color=mediumslateblue, len=.2]
+EELI02 -> COM12
+ edge [style="", weight=10,color=mediumslateblue, len=.2]
+EELI03 -> COM12
+ edge [style="", weight=10,color=Red, len=.2]
+MATI06 -> COM01
+ edge [style="", weight=10,color=Red, len=.2]
+MATI07 -> COM01
+ edge [style="", weight=10,color=darkgoldenrod, len=.2]
+ECOI08 -> COM06
+ edge [style="", weight=10,color=orange, len=.2]
+EMEI07 -> COM03
+ edge [style="", weight=10,color=orange, len=.2]
+EMEI08 -> COM03
+ edge [style="", weight=10,color=orange, len=.2]
+FISI04 -> COM03
+ edge [style="", weight=10,color=orange, len=.2]
+EMBI02 -> COM03
+ edge [style="", weight=10,color=Red, len=.2]
+MATI05 -> COM01
+ edge [style="", weight=10,color=Red, len=.2]
+MATI08 -> COM01
+ edge [style="", weight=10,color=Red, len=.2]
+MATI04 -> COM01
+ edge [style="", weight=10,color=pink, len=.2]
+ECOI09 -> COM05
+ edge [style="", weight=10,color=orange, len=.2]
+FISI05 -> COM03
+ edge [style="", weight=10,color=orange, len=.2]
+FISI07 -> COM03
+ edge [style="", weight=10,color=darkgoldenrod, len=.2]
+ECOI11 -> COM06
+ edge [style="", weight=10,color=goldenrod, len=.2]
+ECOI12 -> COM13
+ edge [style="", weight=10,color=lightsalmon, len=.2]
+ECOI14 -> COM10
+ edge [style="", weight=10,color=teal, len=.2]
+ECAI26 -> COM14
+ edge [style="", weight=10,color=gold, len=.2]
+ECOI10 -> COM11
+ edge [style="", weight=10,color=gold, len=.2]
+EELI10 -> COM11
+ edge [style="", weight=10,color=gold, len=.2]
+EELI11 -> COM11
+ edge [style="", weight=10,color=orange, len=.2]
+FISI06 -> COM03
+ edge [style="", weight=10,color=gold, len=.2]
+ECOI32 -> COM11
+ edge [style="", weight=10,color=tomato, len=.2]
+ECOI13 -> COM07
+ edge [style="", weight=10,color=mediumslateblue, len=.2]
+EELI14 -> COM12
+ edge [style="", weight=10,color=mediumslateblue, len=.2]
+EELI15 -> COM12
+ edge [style="", weight=10,color=goldenrod, len=.2]
+ECOI15 -> COM13
+ edge [style="", weight=10,color=plum, len=.2]
+ECAI29 -> COM16
+ edge [style="", weight=10,color=gold, len=.2]
+EELI12 -> COM11
+ edge [style="", weight=10,color=magenta, len=.2]
+ECOI16 -> COM08
+ edge [style="", weight=10,color=gold, len=.2]
+EELI13 -> COM11
+ edge [style="", weight=10,color=mediumslateblue, len=.2]
+ECAI11 -> COM12
+ edge [style="", weight=10,color=plum, len=.2]
+ECAI04 -> COM16
+ edge [style="", weight=10,color=teal, len=.2]
+ECAI13 -> COM14
+ edge [style="", weight=10,color=teal, len=.2]
+ECAI44 -> COM14
+ edge [style="", weight=10,color=dodgerblue, len=.2]
+ECOI18 -> COM17
+ edge [style="", weight=10,color=dodgerblue, len=.2]
+ECOI19 -> COM17
+ edge [style="", weight=10,color=yellow, len=.2]
+EPRI30 -> COM04
+ edge [style="", weight=10,color=mediumslateblue, len=.2]
+ECOI07 -> COM12
+ edge [style="", weight=10,color=plum, len=.2]
+ECAI07 -> COM16
+ edge [style="", weight=10,color=plum, len=.2]
+ECAI05 -> COM16
+ edge [style="", weight=10,color=dodgerblue, len=.2]
+ECOI21 -> COM17
+ edge [style="", weight=10,color=orchid, len=.2]
+ECOI22 -> COM15
+ edge [style="", weight=10,color=khaki, len=.2]
+ECOI23 -> COM18
+ edge [style="", weight=10,color=indigo, len=.2]
+ECOI25 -> COM09
+}

@@ -19,6 +19,7 @@ class GradePerfil
 
 public:
     GradePerfil();
+    vector<DisciplinaPerfil> getGrade();
     void CarregarGradePerfil();
     void atualizaAprovadas(); //Atualiza o arquivo;
     void atualizaReprovadas(); //Atualiza o arquivo Reprovadas;
