@@ -21,8 +21,8 @@ class Grafo
     string comeco;
     string fim;
     void setComeco();
+    void setLegendaPerfil();
     void setFim();
-
 public:
     /**
       @brief Construtor sem parâmetros.
@@ -35,6 +35,11 @@ public:
     void addAresta(Aresta novaAresta);
 
     /**
+      @brief Retorna o Vetor com os vértices.
+    **/
+    vector<Vertice> getVertices();
+    /**
+
       @brief Adiciona novo vértice(Disciplina) ao grafo.
     **/
     void addVertice(Vertice novoVertice);
@@ -48,6 +53,11 @@ public:
       @brief Gera o arquivo grafoDiscente.dot, contrói a imagem pelo programa Graphviz e exibe o grafo.
     **/
     void gerarGraphvizDiscente();
+
+    /**
+     * @brief Gera o arquivo grafoPerfilDiscente.dot, constrói a imagem pelo programa Graphviz e exibe o grafo.
+     */
+    void gerarGraphvizPerfilDiscente();
 
     /**
       @brief Gera uma string para exibir a legenda para o grafo do discente.
