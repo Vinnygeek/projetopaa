@@ -35,7 +35,9 @@ SOURCES += \
     grafo.cpp \
     vertice.cpp \
     aresta.cpp \
-    grafo2.cpp
+    grafo2.cpp \
+    gradeperfil.cpp \
+    disciplinaperfil.cpp
 
 HEADERS += \
         telainicial.h \
@@ -48,7 +50,9 @@ HEADERS += \
     grafo.h \
     vertice.h \
     aresta.h \
-    grafo2.h
+    grafo2.h \
+    gradeperfil.h \
+    disciplinaperfil.h
 
 FORMS += \
         telainicial.ui \

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Opções do Aluno</string>
   </property>
   <widget class="QPushButton" name="pushButton_addAprovadas">
    <property name="geometry">

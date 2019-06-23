@@ -7,6 +7,9 @@
 #include "vertice.h"
 #include "aresta.h"
 #include "grafo2.h"
+#include "gradeperfil.h"
+#include<stdlib.h>
+
     using namespace std;
 
 Grade gradeAluno;
@@ -40,12 +43,23 @@ void TelaAluno::on_pushButton_addReprovadas_clicked()
 
 void TelaAluno::on_pushButton_gerarXml_clicked()
 {
+        GradePerfil gradeParaCoord;
     cout<<"Aluno->gerarXml-> Entrada efetuada"<<endl;
         gradeAluno.CarregarGradeDiscente();
         gradeAluno.atualizaAprovadas();
         gradeAluno.atualizaReprovadas();
         gradeAluno.atualizaPrerequisitos();
         gradeAluno.gerarXmlDiscente();
+
+        gradeParaCoord.CarregarGradePerfil();
+        gradeParaCoord.atualizaAprovadas();
+        gradeParaCoord.atualizaReprovadas();
+        gradeParaCoord.gerarXmlPerfil();
+
+        //Fazer uma chamada no terminal para deletar as disciplinas aprovadas e reprovadas
+        //Para não haver interferência com o código ao reiniciar
+        system("rm /home/vinicius/git_workspace/projetopaa/projetopaa/xml/aprovadas.xml");
+        system("rm /home/vinicius/git_workspace/projetopaa/projetopaa/xml/reprovadas.xml");
 }
 
 void TelaAluno::on_pushButton_gerarHistorico_clicked()
