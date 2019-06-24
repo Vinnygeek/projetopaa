@@ -13,10 +13,10 @@ using namespace std;
  * @brief Esta classe servirá como Engine(máquina) para criar as grades curriculares dos discentes e do coordenador
  * de acordo com a configuração desejada.
  * @param grade Este atributo armazenará todas as disciplinas que compõem a grade curricular do curso.
- * @param QDDDisciplinas Armazenará o arquivo disciplinas.xml, presente na pasta do projeto.
- * @param QDDDependencias Armazenará o arquivo dependencias.xml, presente na pasta do projeto.
- * @param QDDAprovadas Armazenará o arquivo com as disciplinas aprovadas, presente na pasta do projeto.
- * @param QDDReprovadas Armazenará o arquivo com as disciplinas aprovadas, presente na pasta do projeto.
+ * @param QDDDisciplinas Armazenará os dados do arquivo disciplinas.xml, presente na pasta do projeto.
+ * @param QDDDependencias Armazenará os dados do arquivo dependencias.xml, presente na pasta do projeto.
+ * @param QDDAprovadas Armazenará os dados do arquivo com as disciplinas aprovadas, presente na pasta do projeto.
+ * @param QDDReprovadas Armazenará os dados do arquivo com as disciplinas reprovadas, presente na pasta do projeto.
  */
 class Grade
 {

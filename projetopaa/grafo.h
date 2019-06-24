@@ -50,15 +50,18 @@ public:
     void gerarGraphvizCoord();
 
     /**
-      @brief Gera o arquivo grafoDiscente.dot, contrói a imagem pelo programa Graphviz e exibe o grafo.
+      @brief Gera o arquivo grafoPerfilD.dot, contrói a imagem pelo programa Graphviz e exibe o grafo.
     **/
     void gerarGraphvizDiscente();
 
     /**
-     * @brief Gera o arquivo grafoPerfilDiscente.dot, constrói a imagem pelo programa Graphviz e exibe o grafo.
+     * @brief Gera o arquivo grafoPerfilC.dot, constrói a imagem pelo programa Graphviz e exibe o grafo.
      */
     void gerarGraphvizPerfilDiscente();
 
+    /**
+     * @brief Gera o arquivo grafoPerfilDiscente.dot, constrói a imagem pelo programa Graphviz e exibe o grafo.
+     */
     void gerarGraphvizPerfilCoordenador();
 
     /**
