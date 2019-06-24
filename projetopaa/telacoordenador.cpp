@@ -17,6 +17,11 @@ TelaCoordenador::TelaCoordenador(QWidget *parent) :
     ui(new Ui::TelaCoordenador)
 {
     ui->setupUi(this);
+    QPixmap bkgnd("/home/vinicius/git_workspace/projetopaa/projetopaa/images/unifei2.jpg");
+    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Background, bkgnd);
+    this->setPalette(palette);
 }
 
 TelaCoordenador::~TelaCoordenador()

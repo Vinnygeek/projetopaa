@@ -13,7 +13,7 @@ string Aresta::getInfo(){return info;}
 void Aresta::setCor(string novaCor){
     stringstream ss;
     string s;
-    ss <<" edge [style=\"\", weight=10,color="<<novaCor<<", len=.2]\n";
+    ss <<" edge [style=\"\", weight=10,color="<<novaCor<<", len=.4]\n";
     s = ss.str();
     cor = s;
 }

@@ -12,24 +12,24 @@ PER_8 [fillcolor="#d3d3d3" fontcolor="black" pos="14,18!"]
 PER_9 [fillcolor="#d3d3d3" fontcolor="black" pos="16,18!"]
 PER_10 [fillcolor="#d3d3d3" fontcolor="black" pos="18,18!"]
 node [style=filled shape=folder fontsize=20.0 fontname="times bold"]
-FISI01 [fillcolor="#50c878 "fontcolor="Black"pos="0,0!"]
-MATI01 [fillcolor="#50c878 "fontcolor="Black"pos="0,2!"]
-MATI02 [fillcolor="#50c878 "fontcolor="Black"pos="0,4!"]
+FISI01 [fillcolor="#d3d3d3 "fontcolor="black"pos="0,0!"]
+MATI01 [fillcolor="#d3d3d3 "fontcolor="black"pos="0,2!"]
+MATI02 [fillcolor="#d3d3d3 "fontcolor="black"pos="0,4!"]
 HUMI01 [fillcolor="#50c878 "fontcolor="Black"pos="0,6!"]
-HUMI02 [fillcolor="#50c878 "fontcolor="Black"pos="0,8!"]
-ECOI03 [fillcolor="#50c878 "fontcolor="Black"pos="0,10!"]
+HUMI02 [fillcolor="#d3d3d3 "fontcolor="black"pos="0,8!"]
+ECOI03 [fillcolor="#d3d3d3 "fontcolor="black"pos="0,10!"]
 ECOI02 [fillcolor="#50c878 "fontcolor="Black"pos="0,12!"]
-EMEI02 [fillcolor="#50c878 "fontcolor="Black"pos="0,14!"]
-ECOI01 [fillcolor="#50c878 "fontcolor="Black"pos="0,16!"]
-FISI02 [fillcolor="#50c878 "fontcolor="Black"pos="2,0!"]
+EMEI02 [fillcolor="#d3d3d3 "fontcolor="black"pos="0,14!"]
+ECOI01 [fillcolor="#d3d3d3 "fontcolor="black"pos="0,16!"]
+FISI02 [fillcolor="#d3d3d3 "fontcolor="black"pos="2,0!"]
 FISI03 [fillcolor="#50c878 "fontcolor="Black"pos="2,2!"]
 EMEI06 [fillcolor="#50c878 "fontcolor="Black"pos="2,4!"]
-MATI03 [fillcolor="#50c878 "fontcolor="Black"pos="2,6!"]
-ECOI04 [fillcolor="#50c878 "fontcolor="Black"pos="2,8!"]
-EMTI02 [fillcolor="#50c878 "fontcolor="Black"pos="2,10!"]
-EMTI03 [fillcolor="#50c878 "fontcolor="Black"pos="2,12!"]
-EELI02 [fillcolor="#50c878 "fontcolor="Black"pos="2,14!"]
-EELI03 [fillcolor="#50c878 "fontcolor="Black"pos="2,16!"]
+MATI03 [fillcolor="#d3d3d3 "fontcolor="black"pos="2,6!"]
+ECOI04 [fillcolor="#d3d3d3 "fontcolor="black"pos="2,8!"]
+EMTI02 [fillcolor="#d3d3d3 "fontcolor="black"pos="2,10!"]
+EMTI03 [fillcolor="#d3d3d3 "fontcolor="black"pos="2,12!"]
+EELI02 [fillcolor="#d3d3d3 "fontcolor="black"pos="2,14!"]
+EELI03 [fillcolor="#d3d3d3 "fontcolor="black"pos="2,16!"]
 MATI06 [fillcolor="#d3d3d3 "fontcolor="black"pos="4,0!"]
 MATI07 [fillcolor="#d3d3d3 "fontcolor="black"pos="4,2!"]
 ECOI61 [fillcolor="#d3d3d3 "fontcolor="black"pos="4,4!"]
@@ -41,9 +41,9 @@ FISI04 [fillcolor="#d3d3d3 "fontcolor="black"pos="4,14!"]
 EMBI02 [fillcolor="#d3d3d3 "fontcolor="black"pos="4,16!"]
 MATI05 [fillcolor="#d3d3d3 "fontcolor="black"pos="6,0!"]
 MATI08 [fillcolor="#d3d3d3 "fontcolor="black"pos="6,2!"]
-MATI04 [fillcolor="#d3d3d3 "fontcolor="black"pos="6,4!"]
+MATI04 [fillcolor="#50c878 "fontcolor="Black"pos="6,4!"]
 ECOI09 [fillcolor="#d3d3d3 "fontcolor="black"pos="6,6!"]
-FISI05 [fillcolor="#d3d3d3 "fontcolor="black"pos="6,8!"]
+FISI05 [fillcolor="#50c878 "fontcolor="Black"pos="6,8!"]
 FISI07 [fillcolor="#d3d3d3 "fontcolor="black"pos="6,10!"]
 EELI07 [fillcolor="#d3d3d3 "fontcolor="black"pos="6,12!"]
 ECOI11 [fillcolor="#d3d3d3 "fontcolor="black"pos="8,0!"]
@@ -54,21 +54,21 @@ ECOI10 [fillcolor="#d3d3d3 "fontcolor="black"pos="8,8!"]
 EELI10 [fillcolor="#d3d3d3 "fontcolor="black"pos="8,10!"]
 EELI11 [fillcolor="#d3d3d3 "fontcolor="black"pos="8,12!"]
 FISI06 [fillcolor="#d3d3d3 "fontcolor="black"pos="8,14!"]
-ECOI32 [fillcolor="#993399 "fontcolor="lightgrey"pos="10,0!"]
-ECOI13 [fillcolor="#993399 "fontcolor="lightgrey"pos="10,2!"]
-EELI14 [fillcolor="#993399 "fontcolor="lightgrey"pos="10,4!"]
-EELI15 [fillcolor="#993399 "fontcolor="lightgrey"pos="10,6!"]
-ECOI15 [fillcolor="#993399 "fontcolor="lightgrey"pos="10,8!"]
-ECAI29 [fillcolor="#993399 "fontcolor="lightgrey"pos="10,10!"]
-EELI12 [fillcolor="#993399 "fontcolor="lightgrey"pos="10,12!"]
-ECOI16 [fillcolor="#993399 "fontcolor="lightgrey"pos="10,14!"]
-EELI13 [fillcolor="#993399 "fontcolor="lightgrey"pos="10,16!"]
+ECOI32 [fillcolor="#d3d3d3 "fontcolor="black"pos="10,0!"]
+ECOI13 [fillcolor="#d3d3d3 "fontcolor="black"pos="10,2!"]
+EELI14 [fillcolor="#d3d3d3 "fontcolor="black"pos="10,4!"]
+EELI15 [fillcolor="#d3d3d3 "fontcolor="black"pos="10,6!"]
+ECOI15 [fillcolor="#d3d3d3 "fontcolor="black"pos="10,8!"]
+ECAI29 [fillcolor="#d3d3d3 "fontcolor="black"pos="10,10!"]
+EELI12 [fillcolor="#d3d3d3 "fontcolor="black"pos="10,12!"]
+ECOI16 [fillcolor="#d3d3d3 "fontcolor="black"pos="10,14!"]
+EELI13 [fillcolor="#d3d3d3 "fontcolor="black"pos="10,16!"]
 ECOI26 [fillcolor="#d3d3d3 "fontcolor="black"pos="12,0!"]
-ECAI11 [fillcolor="#993399 "fontcolor="lightgrey"pos="12,2!"]
-ECAI04 [fillcolor="#993399 "fontcolor="lightgrey"pos="12,4!"]
-ECAI13 [fillcolor="#993399 "fontcolor="lightgrey"pos="12,6!"]
-ECAI44 [fillcolor="#993399 "fontcolor="lightgrey"pos="12,8!"]
-ECOI18 [fillcolor="#993399 "fontcolor="lightgrey"pos="12,10!"]
+ECAI11 [fillcolor="#d3d3d3 "fontcolor="black"pos="12,2!"]
+ECAI04 [fillcolor="#d3d3d3 "fontcolor="black"pos="12,4!"]
+ECAI13 [fillcolor="#d3d3d3 "fontcolor="black"pos="12,6!"]
+ECAI44 [fillcolor="#d3d3d3 "fontcolor="black"pos="12,8!"]
+ECOI18 [fillcolor="#d3d3d3 "fontcolor="black"pos="12,10!"]
 ECOI19 [fillcolor="#d3d3d3 "fontcolor="black"pos="12,12!"]
 ECOI17 [fillcolor="#d3d3d3 "fontcolor="black"pos="12,14!"]
 ECOI24 [fillcolor="#d3d3d3 "fontcolor="black"pos="14,0!"]
@@ -86,164 +86,164 @@ ECOI25 [fillcolor="#d3d3d3 "fontcolor="black"pos="16,10!"]
 EAMI30 [fillcolor="#d3d3d3 "fontcolor="black"pos="16,12!"]
 EPRI02 [fillcolor="#d3d3d3 "fontcolor="black"pos="16,14!"]
 TCC01 [fillcolor="#d3d3d3 "fontcolor="black"pos="16,16!"]
-ESTA01 [fillcolor="#d3d3d3 "fontcolor="black"pos="18,0!"]
-TCC02 [fillcolor="#d3d3d3 "fontcolor="black"pos="18,2!"]
+ESTA01 [fillcolor="#993399 "fontcolor="lightgrey"pos="18,0!"]
+TCC02 [fillcolor="#993399 "fontcolor="lightgrey"pos="18,2!"]
 node [style=filled shape=circle fontsize=22.0 fontname="times bold"]
 APR [fillcolor="#50c878" fontcolor="Black" pos="22,12!"]
 REP [fillcolor="#993399" fontcolor="Lightgray" pos="22,14!"]
 NR [fillcolor="#d3d3d3" fontcolor="Black" pos="22,16!"]
 node [style=filled shape=box fontsize=20.0 fontname="times bold"]
 LEGENDA [fillcolor="#d3d3d3" fontcolor="black" pos="22,18!"]
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 FISI02 -> FISI01
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EMEI06 -> MATI01
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EMEI06 -> FISI01
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI03 -> MATI01
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Green, len=.4]
 ECOI04 -> ECOI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI06 -> MATI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI06 -> MATI03
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI07 -> MATI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI61 -> HUMI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 HUMI06 -> HUMI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI08 -> ECOI04
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EMEI07 -> FISI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EMEI08 -> FISI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 FISI04 -> MATI03
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Green, len=.4]
 EMBI02 -> EMEI06
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI05 -> MATI01
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI08 -> MATI01
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI08 -> MATI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI08 -> MATI03
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI08 -> MATI07
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 MATI04 -> MATI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI09 -> ECOI04
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 FISI05 -> FISI04
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 FISI07 -> FISI04
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI11 -> ECOI04
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI12 -> EELI02
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI14 -> ECOI08
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI26 -> MATI07
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI10 -> EELI07
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EELI10 -> EELI07
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EELI11 -> EELI07
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Green, len=.4]
 FISI06 -> FISI05
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI32 -> EELI10
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI13 -> ECOI03
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI13 -> EELI10
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EELI14 -> EELI02
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EELI14 -> EELI10
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EELI15 -> EELI02
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EELI15 -> EELI10
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI15 -> ECOI08
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI15 -> ECOI12
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI29 -> EELI07
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI29 -> ECAI26
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EELI12 -> ECAI26
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EELI12 -> EELI10
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI16 -> ECOI14
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI26 -> ECOI03
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI26 -> ECOI09
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI11 -> ECOI04
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI11 -> EELI14
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI11 -> EELI15
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Green, len=.4]
 ECAI04 -> MATI04
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI04 -> ECAI29
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI13 -> ECAI29
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI44 -> ECAI29
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI17 -> EELI10
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI24 -> MATI02
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI24 -> ECOI04
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI24 -> ECAI44
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 EPRI30 -> MATI02
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI07 -> ECOI15
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI07 -> ECAI11
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI07 -> EELI14
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI07 -> EELI15
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECAI05 -> ECAI04
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI21 -> ECOI18
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Green, len=.4]
 HUMI04 -> HUMI01
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Green, len=.4]
 EPRI04 -> HUMI01
- edge [style="", weight=10,color=Green, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI22 -> ECOI04
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI22 -> ECAI04
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI22 -> ECAI05
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI23 -> ECOI12
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI23 -> ECOI15
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI23 -> ECOI21
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI20 -> ECOI16
- edge [style="", weight=10,color=Black, len=.2]
+ edge [style="", weight=10,color=Black, len=.4]
 ECOI25 -> ECOI16
 }

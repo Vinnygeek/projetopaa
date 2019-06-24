@@ -33,12 +33,18 @@ void Grafo2::DFSUtil(int v, bool visited[],Grafo &GrafoParaPerfil, vector<Discip
                                     gradinha[v].getCodigo() == "MATI05" || gradinha[v].getCodigo() == "MATI08"){
                                     sss <<gradinha[v].getCodigo() <<" -> "<<"COM01"<<'\n';
                                     novaAresta.setInfo(sss.str());
-                                    novaAresta.setCor("Red"); //ff0000
+                                    if(gradinha[v].getSituacao() == "APR")
+                                        novaAresta.setCor("Green");
+                                    else
+                                        novaAresta.setCor("Red"); //ff0000
                             }
                         else if(gradinha[v].getCodigo() == "ECOI03"){
                                     sss <<gradinha[v].getCodigo() <<" -> "<<"COM02"<<'\n';
                                     novaAresta.setInfo(sss.str());
-                                    novaAresta.setCor("Blue"); //0000ff
+                                    if(gradinha[v].getSituacao() == "APR")
+                                        novaAresta.setCor("Green");
+                                    else
+                                        novaAresta.setCor("Salmon"); //ff0000
 
                             }
                         else if(gradinha[v].getCodigo() == "FISI01" || gradinha[v].getCodigo() == "EMTI02" || gradinha[v].getCodigo() == "EMTI03" ||
@@ -47,72 +53,137 @@ void Grafo2::DFSUtil(int v, bool visited[],Grafo &GrafoParaPerfil, vector<Discip
                                 gradinha[v].getCodigo() == "FISI05" || gradinha[v].getCodigo() == "FISI07" || gradinha[v].getCodigo() == "FISI06"){
                                 sss <<gradinha[v].getCodigo() <<" -> "<<"COM03"<<'\n';
                                 novaAresta.setInfo(sss.str());
-                                novaAresta.setCor("orange");  //ffa500
+                                if(gradinha[v].getSituacao() == "APR")
+                                    novaAresta.setCor("Green");
+                                else
+                                    novaAresta.setCor("orange"); //ff0000
                                 }
                         else if(gradinha[v].getCodigo() == "EPRI30"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM04"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("yellow");} //ffff00
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("yellow"); //ff0000
+                            } //ffff00
+
                         else if(gradinha[v].getCodigo() == "ECOI02" || gradinha[v].getCodigo() == "ECOI09"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM05"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("pink");} //ffc0cb
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("gold"); //ff0000
+
+                        } //ffc0cb
                         else if(gradinha[v].getCodigo() == "ECOI04" || gradinha[v].getCodigo() == "ECOI08" || gradinha[v].getCodigo() == "ECOI11"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM06"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("darkgoldenrod");} //b8860b
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("darkgoldenrod"); //ff0000
+                        } //b8860b
                         else if(gradinha[v].getCodigo() == "ECOI13"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM07"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("tomato");} //ff6347
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("khaki");
+                        } //ff6347
                         else if(gradinha[v].getCodigo() == "ECOI16"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM08"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("magenta");} //ff00ff
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("tan");
+                        } //ff00ff
                         else if(gradinha[v].getCodigo() == "ECOI25"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM09"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("indigo");} //4b0082
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("grey");
+                        } //4b0082
                         else if(gradinha[v].getCodigo() == "ECOI14"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM10"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("lightsalmon");} //ffa07a
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("blue");
+                        } //ffa07a
                         else if(gradinha[v].getCodigo() == "EELIO7" || gradinha[v].getCodigo() == "ECOI10" || gradinha[v].getCodigo() == "EELI10" ||
                                 gradinha[v].getCodigo() == "EELI11" || gradinha[v].getCodigo() == "ECOI32" || gradinha[v].getCodigo() == "EELI12" ||
                                 gradinha[v].getCodigo() == "EELI13" || gradinha[v].getCodigo() == "ECOI33"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM11"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("gold");} //ffd700
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("blueviolet");
+                        } //ffd700
                         else if(gradinha[v].getCodigo() == "EELI02" || gradinha[v].getCodigo() == "EELI03" || gradinha[v].getCodigo() == "ECAI11" ||
                                 gradinha[v].getCodigo() == "EELI14" || gradinha[v].getCodigo() == "EELI15" || gradinha[v].getCodigo() == "ECOI07"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM12"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("mediumslateblue");} //7b68ee
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("cyan");
+                        } //7b68ee
                         else if(gradinha[v].getCodigo() == "ECOI12" || gradinha[v].getCodigo() == "ECOI15"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM13"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("goldenrod");} // #daa520
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("darkorchid");
+                        } // #daa520
                         else if(gradinha[v].getCodigo() == "ECAI26" || gradinha[v].getCodigo() == "ECAI44" || gradinha[v].getCodigo() == "ECAI13"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM14"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("teal");} //008080
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("pink");
+                        } //008080
                         else if(gradinha[v].getCodigo() == "ECOI22"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM15"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("orchid");} //da70d6
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("purple");
+                        } //da70d6
                         else if(gradinha[v].getCodigo() == "ECAI29" || gradinha[v].getCodigo() == "ECAI04" || gradinha[v].getCodigo() == "ECAI05" ||
                                 gradinha[v].getCodigo() == "ECAI07"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM16"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("plum");} //dda0dd
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("turquoise");
+                        } //dda0dd
                         else if(gradinha[v].getCodigo() == "ECOI18" || gradinha[v].getCodigo() == "ECOI19" || gradinha[v].getCodigo() == "ECOI21"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM17"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("dodgerblue");} //1e90ff
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("deeppink");
+                        } //1e90ff
                         else if(gradinha[v].getCodigo() == "ECOI23"){
                             sss <<gradinha[v].getCodigo() <<" -> "<<"COM18"<<'\n';
                             novaAresta.setInfo(sss.str());
-                            novaAresta.setCor("khaki");} //f0e686
+                            if(gradinha[v].getSituacao() == "APR")
+                                novaAresta.setCor("Green");
+                            else
+                                novaAresta.setCor("magenta");
+                        } //f0e686
                         else {}
 
                 GrafoParaPerfil.addAresta(novaAresta);

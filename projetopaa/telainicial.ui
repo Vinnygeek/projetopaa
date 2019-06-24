@@ -17,10 +17,10 @@
    <widget class="QPushButton" name="pushButton_Aluno">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>60</y>
-      <width>89</width>
-      <height>25</height>
+      <x>130</x>
+      <y>30</y>
+      <width>151</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="text">
@@ -30,10 +30,10 @@
    <widget class="QPushButton" name="pushButton_Coordenador">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>100</y>
-      <width>89</width>
-      <height>25</height>
+      <x>130</x>
+      <y>150</y>
+      <width>151</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
