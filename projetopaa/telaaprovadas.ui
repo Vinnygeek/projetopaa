@@ -334,7 +334,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>EMBIO2</string>
+     <string>EMBI02</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="checkBox_23">
