@@ -8,11 +8,11 @@
 using namespace std;
 
 /**
- * @brief Esta classe servirá como estrutura de dados e Engine(máquina)para representar e gerar o grafo pelo programa Araphviz.
+ * @brief Esta classe servirá como estrutura de dados e Engine(máquina)para representar e gerar o grafo pelo programa Graphviz.
  * @param arestas Este atributo armazenará todas as arestas(Prerequisitos) do grafo.
  * @param vertices Este atributo armazenará todos os vértices(Disciplinas) do grafo.
  * @param comeco Este atributo armaze a string de inicializacao do arquivo .dot de onde será chamado a função para gerar o grafo.
- * @param fim Este atributo armaze a string de finalizacao do arquivo .dot de onde será chamado a função para gerar o grafo.
+ * @param fim Este atributo armazena a string de finalização do arquivo .dot de onde será chamado o método para gerar o grafo.
  */
 class Grafo
 {

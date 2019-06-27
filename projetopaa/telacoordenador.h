@@ -10,7 +10,7 @@ class TelaCoordenador;
 
 /**
  * @brief Esta classe define os métodos para a criação da tela onde o coordenador poderá efetuar suas funções.
- * @param ui Ponteiro para a tela atual onde é exibido a tela com as opções do coordenador
+ * @param ui Ponteiro para a tela atual onde é exibido a tela com as opções do coordenador.
  */
 class TelaCoordenador : public QDialog
 {

@@ -7,7 +7,7 @@
 /**
 * @brief Esta classe servirá para criar objetos das disciplinas de forma a criar os perfis dos estudantes as situações do curso
 * para o coordenador
-* @param codigo Esta atributo armazena o código da disciplina. Ex: ECOI33.1.
+* @param codigo Este atributo armazena o código da disciplina. Ex: ECOI33.1.
 * @param aprovadas Armazena a quantidade de alunos que aprovaram nesta disciplina.
 * @param reprovadas Armazena a quantidade de alunos que reprovaram nesta disciplina.
 * @param posicao Armazena a posição do nó da disciplina no grafo.

@@ -45,19 +45,19 @@ public:
 
     /**
       @brief Este método atualiza todos os pre-requisitos de todas as disciplinas do vetor grade
-      a partir do arquivo dependencias.xml, localizada na pasta do projeto,
+      a partir do arquivo dependencias.xml, localizada na pasta do projeto.
     **/
     void atualizaPrerequisitos();
 
     /**
       @brief Este método atualiza todos as disciplinas aprovadas do vetor grade
-      a partir do arquivo aprovadas.xml, gerado pelo discente no programa e localizado na pasta do projeto,
+      a partir do arquivo aprovadas.xml, gerado pelo discente no programa e localizado na pasta do projeto.
     **/
     void atualizaAprovadas();
 
     /**
       @brief Este método atualiza todos as disciplinas reprovadas do vetor grade
-      a partir do arquivo reprovadas.xml, gerado pelo discente no programa e localizado na pasta do projeto,
+      a partir do arquivo reprovadas.xml, gerado pelo discente no programa e localizado na pasta do projeto.
     **/
     void atualizaReprovadas();
 

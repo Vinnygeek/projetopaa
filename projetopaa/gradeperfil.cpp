@@ -23,7 +23,7 @@ void GradePerfil::CarregarGradePerfil(){
             QString attribute2 = QString::fromStdString("APROVACOES");
             QString attribute3 = QString::fromStdString("REPROVACOES");
             QString attribute4 = QString::fromStdString("POSICAO");
-            QDomNodeList items = root.elementsByTagName(tagname);//Processndo a variável root.
+            QDomNodeList items = root.elementsByTagName(tagname);//Processando a variável root.
             for(int i = 0; i < items.count();i++){//Laço para percorrer todos os itens passados por root(esses itens ).
                 QDomNode itemnode = items.at(i);//Recupera o i-ésimo item presente no arquivo XML passado por root.
                 if(itemnode.isElement()){//Verifica se a i-ésima disciplina de fato é um ítem processável.

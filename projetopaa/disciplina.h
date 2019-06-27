@@ -8,13 +8,13 @@
  * @brief Esta classe servirá como estrutura de dados para o armazenamento de todas as informações pertinentes
  * à cada disciplina dos cursos.
  * @param nome atributo que armazena o nome da disciplina. Ex: Circuitos Integrados Analógicos.
- * @param codigo Esta atributo armazena o código da disciplina. Ex: ECOI33.1.
- * @param semestre Esta atributo armazena o semestre regular da disciplina.
- * @param situacao Esta atributo armazena a situação do discente quanto a disciplina: Ex: "APR" para aprovado, "REP" para
+ * @param codigo Este atributo armazena o código da disciplina. Ex: ECOI33.1.
+ * @param semestre Este atributo armazena o semestre regular da disciplina.
+ * @param situacao Este atributo armazena a situação do discente quanto a disciplina: Ex: "APR" para aprovado, "REP" para
  * reprovado e "NR" para não realizada.
- * @param carga Esta atributo armazena a carga horária da disciplina.
- * @param repindex Esta atributo armazena em porcentagem a qtd de alunos reprovados na disciplina.
- * @param pontuacao Esta atributo armazena a pontuação obtida pelo discente ao ser aprovado na mesma.
+ * @param carga Este atributo armazena a carga horária da disciplina.
+ * @param repindex Este atributo armazena em porcentagem a qtd de alunos reprovados na disciplina.
+ * @param pontuacao Este atributo armazena a pontuação obtida pelo discente ao ser aprovado na mesma.
  */
 class Disciplina
 {
@@ -28,16 +28,15 @@ class Disciplina
     vector<string> dependencias;
 public:    
     /**
-      @brief O método construtor configura todas as variáveis do objeto com os respectivos parâmetros passados pelo mesmo.
-    * à cada disciplina dos cursos.
+      @brief O método construtor configura todos os atributos do objeto criado com os respectivos parâmetros passados pelo mesmo.
     * @param nome atributo que armazena o nome da disciplina. Ex: Circuitos Integrados Analógicos.
-    * @param codigo Esta atributo armazena o código da disciplina. Ex: ECOI33.1.
-    * @param semestre Esta atributo armazena o semestre regular da disciplina.
-    * @param situacao Esta atributo armazena a situação do discente quanto a disciplina: Ex: "APR" para aprovado, "REP" para
+    * @param codigo Este atributo armazena o código da disciplina. Ex: ECOI33.1.
+    * @param semestre Este atributo armazena o semestre regular da disciplina.
+    * @param situacao Este atributo armazena a situação do discente quanto a disciplina: Ex: "APR" para aprovado, "REP" para
     * reprovado e "NR" para não realizada.
-    * @param carga Esta atributo armazena a carga horária da disciplina.
-    * @param repindex Esta atributo armazena em porcentagem a qtd de alunos reprovados na disciplina.
-    * @param pontuacao Esta atributo armazena a pontuação obtida pelo discente ao ser aprovado na mesma.
+    * @param carga Este atributo armazena a carga horária da disciplina.
+    * @param repindex Este atributo armazena em porcentagem a quantidade de alunos reprovados na disciplina.
+    * @param pontuacao Este atributo armazena a pontuação obtida pelo discente ao ser aprovado na mesma.
     * @param dependencias Este atributo contém todos os prerequisitos de cada disciplina.
     **/
     Disciplina(string Nome, string Codigo,int Semestre, string Situacao, double Carga,double Repindex);

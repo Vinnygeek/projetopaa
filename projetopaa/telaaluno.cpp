@@ -337,6 +337,3 @@ void TelaAluno::on_pushButton_gerarPerfil_clicked()
     GrafoParaPerfil.gerarGraphvizPerfilDiscente();
     cout<<"Aluno->GerarPerfil-> Entrada efetuada"<<endl;
 }
-
-//Colorir de verde as disciplinas aprovadas e
-//passar o vértice nas mesmas;

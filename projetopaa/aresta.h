@@ -6,10 +6,10 @@ using namespace std;
 
 /**
  * @brief Esta classe servirá como estrutura de dados para as arestas(pre-requisitos) do grafo. Seus parâmetros retornam informações que serão
- * processados pelo programa Graphviz.
- * @param info Neste parâmetro será armazenado a informação da aresta, no formato aceito pelo
+ * processadas pelo programa Graphviz.
+ * @param info Neste atributo será armazenado a informação da aresta, no formato aceito pelo
  * programa Graphviz, para a geração do grafo da grade curricular.
- * @param cor Neste parâmetro será armazenada a cor da aresta, no formato aceito pelo programa Graphviz.
+ * @param cor Neste atributo será armazenada a cor da aresta, no formato aceito pelo programa Graphviz.
  *
  */
 class Aresta
@@ -24,22 +24,22 @@ public:
     Aresta();
 
     /**
-      @brief Configura a atributo info.
+      @brief Configura o atributo info.
     **/
     void setInfo(string novaString);
 
     /**
-      @brief Retorna a atributo info.
+      @brief Retorna o atributo info.
     **/
     string getInfo();
 
     /**
-      @brief Configura a atributo cor.
+      @brief Configura o atributo cor.
     **/
     void setCor(string novaCor);
 
     /**
-      @brief Retorna a atributo cor.
+      @brief Retorna o atributo cor.
     **/
     string getCor();
     

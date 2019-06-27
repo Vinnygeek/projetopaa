@@ -33,20 +33,20 @@ public:
     vector<DisciplinaPerfil> getGrade();
 
     /**
-      @brief Este Carrega as informações da grade do arquivo situacao.xml, onde contém todas as aprovações e reprovações de cada
+      @brief Este carrega as informações da grade do arquivo situacao.xml, onde contém todas as aprovações e reprovações de cada
       disciplina.
     **/
     void CarregarGradePerfil();
 
     /**
-      @brief Este método atualiza todos as disciplinas aprovadas do vetor grade
-      a partir do arquivo aprovadas.xml, gerado pelo discente no programa e localizado na pasta do projeto,
+      @brief Este método atualiza todas as disciplinas aprovadas do vetor grade
+      a partir do arquivo aprovadas.xml, gerado pelo discente no programa e localizado na pasta do projeto.
     **/
     void atualizaAprovadas(); //Atualiza o arquivo;
 
     /**
-      @brief Este método atualiza todos as disciplinas reprovadas do vetor grade
-      a partir do arquivo reprovadas.xml, gerado pelo discente no programa e localizado na pasta do projeto,
+      @brief Este método atualiza todas as disciplinas reprovadas do vetor grade
+      a partir do arquivo reprovadas.xml, gerado pelo discente no programa e localizado na pasta do projeto.
     **/
     void atualizaReprovadas(); //Atualiza o arquivo Reprovadas;
     /**

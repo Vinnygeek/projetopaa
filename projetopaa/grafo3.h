@@ -17,8 +17,8 @@ using namespace std;
  */
 class Grafo3
 {
-    int V;    // No. of vertices
-    list<int> *adj;    // Pointer to an array containing adjacency lists
+    int V;
+    list<int> *adj;
     void DFSUtil(int v, bool visited[], Grafo &GrafoParaPerfil, vector<DisciplinaPerfil> &gradinha);
 public:
     /**
@@ -29,13 +29,13 @@ public:
     /**
       @brief Adiciona nova aresta(Competências) ao grafo.
     **/
-    void addEdge(int v, int w);   // function to add an edge to graph
+    void addEdge(int v, int w);
 
     /**
       @brief Faz a busca em profundidade em todo o grafo, atualizando cada disciplina com sua respectiva competência e
       indicando se o componente possui maior índice de reprovação ou aprovação.
     **/
-    void DFS(Grafo &GrafoParaPerfil, vector<DisciplinaPerfil> &gradinha);    // prints DFS traversal of the complete graph
+    void DFS(Grafo &GrafoParaPerfil, vector<DisciplinaPerfil> &gradinha);
 };
 
 #endif // GRAFO3_H
